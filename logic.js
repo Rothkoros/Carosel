@@ -1,3 +1,6 @@
+
+
+
 let html = "";
 $(document).ready(function () {
   console.log("Document ready");
@@ -19,7 +22,7 @@ $(document).ready(function () {
       pause: "1",
       prev: "#prev",
       next: "#next",
-      speed: 500,
+      speed: 800,
       timeout: 1000,
     });
   });
