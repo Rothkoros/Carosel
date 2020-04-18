@@ -1,49 +1,17 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="jquery.js"></script>
-        <script type="text/javascript" src="jquery-cycle-all.js"></script>
-        
-        <script>
-            var html = '';
-            $(document).ready(function () {
-                $.getJSON('products.json', function (data) {
-                    console.log("one");
-                    $.each(data, function (key, value) {
-                        console.log("two");
-                        $.each(value, function (index, interest) {
-                            console.log(index + " " + interest.Activity);
-                            html += '<div class= "books">';
-                            html += '<h2>' + interest.desc + '</h2></div>';
-
-                            html += '<h4>' + interest.Activity + '</h4>';
-                            html += `<p onclick="bookinfo(${interest})"><img src="` + interest.Source + '" style="width:1000px;height:1000px"></p></div>';
-                        });
-                    });
-                    $('#books').html(html);
-                    console.log(html);
-                    $('#books').cycle({
-                        fx: 'fade',
-                        pause: '1',
-                        prev: '#prev',
-                        next: '#next',
-                        speed: 500,
-                        timeout: 1000
-
-                    });
-                });
-            });
-
-
-
-
-
-        </script>
-    </head>
-    <body>
-        <div id="books"></div>
-
-    </body>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-cycle-all.js"></script>
+    <!-- JavaScript -->
+    <script src="logic.js"></script>
+  </head>
+  <body>
+    <div id="books"></div>
+    <div id="information"></div>
+  </body>
 </html>

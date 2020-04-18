@@ -1,34 +1,34 @@
 {
-    "interest": [
-        {
-            "Activity": "Video Games",
-            "Source": "images/games.jpg",
-            "desc": "I like video games. PC master race."
-        },
-        {
-            "Activity": "Tech",
-            "Source": "images/tech.jpg",
-            "desc": "I like fixing computers phones, RC cars, and RC planes."
-        },
-        {
-            "Activity": "Camping",
-            "Source": "images/camping.jpg",
-            "desc": "I like to get lost in the woods and eat pinecones."
-        },
-        {
-            "Activity": "Food",
-            "Source": "images/food.jpg",
-            "desc": "I love trying new food and eating like a human."
-        },
-        {
-            "Activity": "Music",
-            "Source": "images/music.jpg",
-            "desc": "I like listening to music."
-        },
-        {
-            "Activity": "Guns",
-            "Source": "images/guns.jpg",
-            "desc": "I like shooting and building firearms."
-        },
-    ]
+  "interest": [
+    {
+      "Activity": "Video Games",
+      "Source": "images/games.jpg",
+      "desc": "I like video games. PC master race."
+    },
+    {
+      "Activity": "Tech",
+      "Source": "images/tech.jpg",
+      "desc": "I like fixing computers phones, RC cars, and RC planes."
+    },
+    {
+      "Activity": "Camping",
+      "Source": "images/camping.jpg",
+      "desc": "I like to get lost in the woods and eat pinecones."
+    },
+    {
+      "Activity": "Food",
+      "Source": "images/food.jpg",
+      "desc": "I love trying new food and eating like a human."
+    },
+    {
+      "Activity": "Music",
+      "Source": "images/music.jpg",
+      "desc": "I like listening to music."
+    },
+    {
+      "Activity": "Guns",
+      "Source": "images/guns.jpg",
+      "desc": "I like shooting and building firearms."
+    }
+  ]
 }
