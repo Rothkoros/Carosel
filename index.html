@@ -1,9 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery-cycle-all.js"></script>
+        
+        <script>
+            var html = '';
+            $(document).ready(function () {
+                $.getJSON('products.json', function (data) {
+                    console.log("one");
+                    $.each(data, function (key, value) {
+                        console.log("two");
+                        $.each(value, function (index, book) {
+                            console.log(index + " " + book.Author);
+                            html += '<div class= "books">';
+                            html += '<h2 id ="title">' + book.Title + '</h2></div>';
+
+                            html += '<h4>' + book.Author + '</h4>';
+                            html += '<p onclick="bookinfo()"><img src="' + book.Source + '" style="width:1000px;height:1000px"></p></div>';
+                        });
+                    });
+                    $('#books').html(html);
+                    console.log(html);
+                    $('#books').cycle({
+                        fx: 'fade',
+                        pause: '1',
+                        prev: '#prev',
+                        next: '#next',
+                        speed: 500,
+                        timeout: 1000
+
+                    });
+                });
+            });
+
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <div id="books"></div>
+
+    </body>
 </html>
